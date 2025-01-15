@@ -124,16 +124,24 @@ Here is a list of key dependencies used in each service:
 
 ## How to Run the Project
 
+To run any service use 
+
+```sh
+mvn clean install
+mvn spring-boot:run
+```
+
 1. **Start the Eureka Discovery Service**:  
    Run the `discovery-service`.
+   
 
-2. **Start the Gateway Service**:  
+3. **Start the Gateway Service**:  
    Run the `gateway` service.
 
-3. **Start the Customer, Inventory, and Billing Services**:  
+4. **Start the Customer, Inventory, and Billing Services**:  
    Run `customer-service`, `inventory-service`, and `billing-service`.
 
-4. **Access Services via Gateway**:
+5. **Access Services via Gateway**:
   - Customer Service: `http://localhost:8888/CUSTOMER-SERVICE/customers`
   - Inventory Service: `http://localhost:8888/INVENTORY-SERVICE/products`
   - Billing Service: `http://localhost:8888/BILLING-SERVICE/bills`
